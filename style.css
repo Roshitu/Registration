@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', Helvetica,
+        Arial, sans-serif;
+}
+
+input,
+select {
+    display: block;
+    width: 60%;
+    margin: 0 auto 14px;
+    border-radius: 4px;
+    height: 56px;
+    border: 1px solid #d6d6d6;
+    font-size: 17px;
+    padding: 18px 16px;
+    font-weight: 400;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+}
+
+select+span {
+    /* content: '⌄'; */
+    position: relative;
+    display: block;
+    right: 18px;
+    top: 16px;
+    width: 40px;
+    height: 40px;
+    background: red;
+}
+
+p {
+    font-size: 17px;
+    margin: 0 auto;
+}
+
+input+p {
+    width: 60%;
+    margin: -10px auto 18px;
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+}
+
+select+input+p {
+    margin: 0 auto 18px;
+}
+
+input[type='radio'] {
+    display: inline-block;
+    -webkit-appearance: auto;
+    width: 12px;
+    height: 12px;
+    margin-left: 16px;
+}
+
+input[type='checkbox'] {
+    display: inline-block;
+    -webkit-appearance: auto;
+    width: 16px;
+    height: 16px;
+    margin: 10px 4px 0 0;
+}
+
+input[type='checkbox']+label {
+    display: inline-block;
+}
+
+input[type='checkbox']+label+p {
+    display: block;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    padding-left: 24px;
+    margin: 0;
+    margin-bottom: 13px;
+}
+
+hr+p {
+    width: 60%;
+    margin: 0 auto 30px;
+    display: block;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+}
+
+button {
+    font-size: 18px;
+    background: linear-gradient(#42a1ec, #0070c9);
+    border: 1px solid #07c;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 30px;
+    padding: 4px 15px;
+    text-align: center;
+}
+
+a {
+    color: rgb(0, 112, 201);
+    text-decoration: none;
+}
+
+.checkboxes {
+    width: 60%;
+    margin: 0 auto 14px;
+    position: relative;
+    text-align: left;
+}
+
+.twofield {
+    width: 60%;
+    margin: 15px auto 14px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.verifywith {
+    width: 60%;
+    margin: 0 auto 14px;
+    position: relative;
+    text-align: left;
+}
+
+.twofield input {
+    display: inline-block;
+    width: 49%;
+    margin: 0;
+}
+
+.signupform {
+    width: 700px;
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.question {
+    overflow: visible;
+    position: relative;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+.question>* {
+    width: 100%;
+}
+
+.question::after {
+    content: '?';
+    display: block;
+    position: absolute;
+    background: #0070c9;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    top: 16px;
+    right: -28px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.caret {
+    overflow: visible;
+    position: relative;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+.caret>* {
+    width: 100%;
+}
+
+.caret::after {
+    content: '⌄';
+    display: block;
+    position: absolute;
+    color: #999;
+    text-align: center;
+    line-height: 21px;
+    font-size: 21px;
+    top: 14px;
+    right: 16px;
+    width: 20px;
+    height: 20px;
+}
+
+#countryreglabel {
+    width: 60%;
+    margin: 0 auto 4px;
+    display: block;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+}
